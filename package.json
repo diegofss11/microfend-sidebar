@@ -6,6 +6,7 @@
   },
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://microfend-sidebar.herokuapp.com/",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -17,7 +18,7 @@
     "ignore-styles": "^5.0.1"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=https://microfend-sidebar.herokuapp.com/ react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start": "NODE_ENV=production node index.js",
@@ -25,5 +26,17 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
