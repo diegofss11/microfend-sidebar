@@ -1,12 +1,15 @@
 import path  from 'path';
 import fs  from 'fs';
 import express  from 'express';
+import cors from 'cors';
 import React  from 'react';
 import { renderToString }  from 'react-dom/server';
 
 import App from './src/App';
 
 const server = express();
+
+server.use(cors());
 
 server.get('/', (req, res) => {
     const htmlPath = path.resolve(__dirname, 'build', 'index.html');
